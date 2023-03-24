@@ -31,7 +31,7 @@ app.use(function (req, res, next) {
     next();
   });
 
-mongoose.connect('mongodb+srv://blog:taRJiV4dnr1dQBRq@cluster0.cupxg0j.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://blog:taRJiV4dnr1dQBRq@cluster0.cupxg0j.mongodb.net/?retryWrites=true&w=majority&socketTimeoutMS=360000&connectTimeoutMS=360000');
 
 
 app.post('/register',async (req,res)=>{
