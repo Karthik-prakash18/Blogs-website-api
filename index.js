@@ -62,7 +62,7 @@ app.post('/login',async (req,res)=>{
                 expires: new Date(Date.now() + 15* 60000),
                 secure: true,
                 signed: false,
-                domain: "blogwebsite-eight.vercel.app",
+                domain: "shy-pear-nematode-tie.cyclic.app",
                 httpOnly: true,
                 sameSite: "none"
               }).json({
